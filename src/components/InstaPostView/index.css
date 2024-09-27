@@ -1,0 +1,128 @@
+.instapostview-li-container {
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .instapostview-li-container {
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+  }
+}
+.instapostview-header-card {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  padding: 5px;
+}
+.instapostview-profile-icon-border {
+  margin-right: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  padding: 2px;
+  border: 1px solid #c60188;
+}
+.instapostview-profile-icon {
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+}
+.instapostview-userame {
+  height: 18px;
+  top: 21px;
+  left: 72px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: #262626;
+}
+.instapostview-classname-link {
+  text-decoration: none;
+}
+
+.instapostview-image {
+  width: 100%;
+  height: 375px;
+}
+
+@media screen and (min-width: 768px) {
+  .instapostview-image {
+    width: 100%;
+    height: 614px;
+  }
+}
+
+.instapostview-footer-card {
+  margin-left: 15px;
+  padding: 5px;
+}
+
+.instapostview-btn-card {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.instapostview-icon-btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.instapostview-icon {
+  width: 24px;
+  height: 24px;
+  top: 625px;
+  left: 96px;
+  gap: 0px;
+  opacity: 0px;
+}
+.instapostview-likes {
+  margin: 3px;
+  width: 58px;
+  top: 661px;
+  left: 24px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  color: #262626;
+}
+
+.instapostview-caption {
+  margin: 3px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #262626;
+}
+.instapostview-spancomment {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 8px;
+  color: #262626;
+}
+
+.instapostview-comment {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #262626;
+}
+
+.instapostview-createdat {
+  margin: 3px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  color: #989898;
+}

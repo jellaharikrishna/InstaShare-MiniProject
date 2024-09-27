@@ -1,0 +1,350 @@
+.myprofile-bgcontainer {
+  height: 100vh;
+}
+.myprofile-loader-container {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myprofile-mobile-details-card {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+@media screen and (min-width: 768px) {
+  .myprofile-mobile-details-card {
+    display: none;
+  }
+}
+
+.myprofile-username {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  color: #262626;
+}
+
+.myprofile-pic-followers-card {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myprofile-profilepic {
+  width: 96px;
+  height: 96px;
+  border-radius: 50px;
+}
+
+.myprofile-count-card {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.myprofile-count {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  color: #262626;
+  margin: 0;
+}
+.myprofile-count-text {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  color: #262626;
+  margin: 0;
+}
+.myprofile-userid {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  color: #262626;
+}
+
+.myprofile-userbio {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #262626;
+}
+.myprofile-storieslist-card {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.myprofile-storieslist-li {
+  border-radius: 32px;
+  width: 64px;
+  height: 64px;
+  padding: 3px 3px 3px 3px;
+  border: 1px solid #c7c7cc;
+  margin-right: 15px;
+}
+
+.myprofile-storieslist-image {
+  border-radius: 28px;
+  width: 56px;
+  height: 56px;
+}
+.myprofile-hrline {
+  width: 100%;
+}
+
+.myprofile-desktop-details-card {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .myprofile-desktop-details-card {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .myprofile-desktop-userbio-card {
+    display: flex;
+    align-items: center;
+  }
+  .myprofile-desktop-profilepic {
+    margin-right: 30px;
+    border-radius: 80px;
+    width: 160px;
+    height: 160px;
+  }
+  .myprofile-desktop-username-followers-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .myprofile-desktop-username {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 300;
+    color: #262626;
+    margin: 0;
+  }
+
+  .myprofile-desktop-count-followers-card {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .myprofile-desktop-count {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: #262626;
+    margin-right: 30px;
+  }
+
+  .myprofile-desktop-count-text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #262626;
+    margin-left: 5px;
+  }
+
+  .myprofile-desktop-userid {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: #262626;
+    margin: 0;
+  }
+  .myprofile-desktop-userbio {
+    width: 675px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #262626;
+  }
+  .myprofile-desktop-storieslist-card {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .myprofile-desktop-storieslist-li {
+    border-radius: 32px;
+    width: 64px;
+    height: 64px;
+    padding: 3px 3px 3px 3px;
+    border: 1px solid #c7c7cc;
+    margin-right: 20px;
+  }
+  .myprofile-desktop-storieslist-image {
+    border-radius: 28px;
+    width: 56px;
+    height: 56px;
+  }
+  .myprofile-hrline {
+    width: 80%;
+  }
+}
+
+.myprofile-postslist-container {
+  width: 100%;
+}
+
+.myprofile-postslist-title-card {
+  display: flex;
+  align-items: center;
+  margin-left: 22px;
+}
+.myprofile-postslist-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.myprofile-postslist-heading {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 500;
+  color: #262626;
+}
+
+.myprofile-postslist-ul-card {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.myprofile-postslist-li {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.myprofile-postslist-image {
+  width: 118px;
+  height: 118px;
+}
+
+@media screen and (min-width: 768px) {
+  .myprofile-postslist-container {
+    width: 80%;
+    margin: auto;
+  }
+  .myprofile-postslist-title-card {
+    margin: 0;
+  }
+  .myprofile-postslist-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .myprofile-postslist-heading {
+    font-size: 24px;
+  }
+  .myprofile-postslist-image {
+    width: 330px;
+    height: 330px;
+  }
+}
+
+.myprofile-postlist-emptyview-container {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.myprofile-postlist-emptyview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myprofile-postlist-emptyview-icon-card {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #262626;
+  border-radius: 24px;
+  padding: 8px 8px 8px 8px;
+}
+
+.myprofile-postlist-emptyview-icon {
+  width: 29.02px;
+  height: 26.79px;
+}
+
+.myprofile-postlist-emptyview-heading {
+  font-family: Roboto;
+  font-weight: 300;
+  color: #262626;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .myprofile-postlist-emptyview-icon-card {
+    width: 86px;
+    height: 86px;
+    border-radius: 43px;
+    padding: 18px 5px 5px 18px;
+  }
+  .myprofile-postlist-emptyview-icon {
+    width: 48px;
+    height: 45px;
+  }
+  .myprofile-postlist-emptyview-heading {
+    font-size: 32px;
+  }
+}
+
+.myprofile-failure-container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.myprofile-wentwrong-image {
+  width: 48px;
+  height: 48px;
+  top: 599px;
+  left: 697px;
+  padding: 4px 2px 6px 2px;
+  gap: 0px;
+  opacity: 0px;
+}
+.myprofile-wentwrong-heading {
+  width: 286px;
+  height: 24px;
+  top: 378px;
+  left: 37px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #262626;
+}
+.myprofile-tryagain-btn {
+  cursor: pointer;
+  border-radius: 6px;
+  border-width: 0;
+  width: 102px;
+  height: 32px;
+  top: 414px;
+  left: 129px;
+  gap: 0px;
+  opacity: 0px;
+  background: #4094ef;
+  color: #ffffff;
+}

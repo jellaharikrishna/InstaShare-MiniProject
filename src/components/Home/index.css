@@ -1,0 +1,12 @@
+.home-bgcontainer {
+}
+
+.home-hrline {
+  border: 0.5px solid #c6c6c8;
+}
+
+@media screen and (min-width: 768px) {
+  .home-hrline {
+    display: none;
+  }
+}
