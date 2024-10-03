@@ -130,10 +130,6 @@ class UsersPostsSection extends Component {
     )
   }
 
-  onClickTryAgainBtn = () => {
-    this.getUsersPosts()
-  }
-
   usersPostsFailureView = () => (
     <div className="usersposts-failure-container">
       <img
@@ -145,7 +141,7 @@ class UsersPostsSection extends Component {
         Something went wrong. Please try again
       </h1>
       <button
-        onClick={this.onClickTryAgainBtn}
+        onClick={() => this.getUsersPosts()}
         className="usersposts-failure-btn"
         type="button"
       >

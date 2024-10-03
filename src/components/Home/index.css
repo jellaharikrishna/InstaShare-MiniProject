@@ -1,12 +1,131 @@
-.home-bgcontainer {
+.searchresult-showresult-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
 }
-
-.home-hrline {
-  border: 0.5px solid #c6c6c8;
-}
-
 @media screen and (min-width: 768px) {
-  .home-hrline {
+  .searchresult-showresult-container {
     display: none;
   }
 }
+
+.searchresult-showresult-search-icon {
+  color: #dbdbdb;
+  width: 54px;
+  height: 36px;
+}
+
+.searchresult-showresult-para {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.009999999776482582px;
+  text-align: center;
+  color: #989898;
+}
+
+/**/
+.searchresult-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+/**/
+.searchresult-searchnotfound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.searchresult-searchnotfound-image {
+  width: 258px;
+  height: 210px;
+}
+.searchresult-searchnotfound-heading {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #262626;
+}
+.searchresult-searchnotfound-para {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #989898;
+  margin: 0;
+}
+
+/**/
+.searchresult-usersearchinstapostview-container {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+.searchresult-desktop-searchresult-heading {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .searchresult-desktop-container {
+    width: 80%;
+    margin: auto;
+  }
+  .searchresult-usersearchinstapostview-container {
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    box-shadow: 0px 4px 16px 0px #7b879429;
+  }
+  .searchresult-desktop-searchresult-heading {
+    display: block;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    color: #262626;
+  }
+}
+
+/**/
+.searchresult-failure-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.searchresult-failure-image {
+  width: 260px;
+  height: 127px;
+}
+.searchresult-failure-heading {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #262626;
+}
+.searchresult-failure-btn {
+  width: 102px;
+  height: 32px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  background: #4094ef;
+  color: #ffffff;
+  border-radius: 5px;
+  border-width: 0;
+}
+
+/**/

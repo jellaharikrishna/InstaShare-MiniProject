@@ -88,7 +88,7 @@ class MyProfile extends Component {
     } = myProfileData
     return (
       <>
-        <div className="myprofile-mobile-details-card">
+        <div className="myprofile-details-card">
           <h1 className="myprofile-username">{userName}</h1>
           <div className="myprofile-pic-followers-card">
             <img
@@ -96,18 +96,20 @@ class MyProfile extends Component {
               src={profilePic}
               alt="my profile"
             />
-            <ul className="myprofile-count-card">
-              <li className="myprofile-count">{postsCount}</li>
-              <li className="myprofile-count-text">posts</li>
-            </ul>
-            <ul className="myprofile-count-card">
-              <li className="myprofile-count">{followersCount}</li>
-              <li className="myprofile-count-text">followers</li>
-            </ul>
-            <ul className="myprofile-count-card">
-              <li className="myprofile-count">{followingCount}</li>
-              <li className="myprofile-count-text">following</li>
-            </ul>
+            <p className="myprofile-count">
+              {postsCount} <br />
+              <span className="myprofile-count-text">posts</span>
+            </p>
+
+            <p className="myprofile-count">
+              {followersCount} <br />
+              <span className="myprofile-count-text">followers</span>
+            </p>
+
+            <p className="myprofile-count">
+              {followingCount} <br />
+              <span className="myprofile-count-text">following</span>
+            </p>
           </div>
           <p className="myprofile-userid">{userId}</p>
           <p className="myprofile-userbio">{userBio}</p>
@@ -124,52 +126,6 @@ class MyProfile extends Component {
           </ul>
         </div>
 
-        <div className="myprofile-desktop-details-card">
-          <div className="myprofile-desktop-userbio-card">
-            <img
-              className="myprofile-desktop-profilepic"
-              src={profilePic}
-              alt="my profile"
-            />
-
-            <div className="myprofile-desktop-username-followers-card">
-              <h1 className="myprofile-desktop-username">{userName}</h1>
-              <ul className="myprofile-desktop-count-followers-card">
-                <li className="myprofile-desktop-count">
-                  {postsCount}
-                  <span className="myprofile-desktop-count-text">posts</span>
-                </li>
-
-                <li className="myprofile-desktop-count">
-                  {followersCount}
-                  <span className="myprofile-desktop-count-text">
-                    followers
-                  </span>
-                </li>
-
-                <li className="myprofile-desktop-count">
-                  {followingCount}
-                  <span className="myprofile-desktop-count-text">
-                    following
-                  </span>
-                </li>
-              </ul>
-              <h1 className="myprofile-desktop-userid">{userId}</h1>
-              <p className="myprofile-desktop-userbio">{userBio}</p>
-            </div>
-          </div>
-          <ul className="myprofile-desktop-storieslist-card">
-            {storiesList.map(each => (
-              <li className="myprofile-desktop-storieslist-li" key={each.id}>
-                <img
-                  className="myprofile-desktop-storieslist-image"
-                  src={each.image}
-                  alt="my story"
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
         <hr className="myprofile-hrline" />
         <div className="myprofile-postslist-container">
           <div className="myprofile-postslist-title-card">
@@ -205,10 +161,6 @@ class MyProfile extends Component {
     )
   }
 
-  onClickMyProfileTryAgain = () => {
-    this.getMyProfile()
-  }
-
   myProfileFailureView = () => (
     <div className="myprofile-failure-container">
       <img
@@ -220,7 +172,7 @@ class MyProfile extends Component {
         Something went wrong. Please try again
       </p>
       <button
-        onClick={this.onClickMyProfileTryAgain}
+        onClick={() => this.getMyProfile()}
         className="myprofile-tryagain-btn"
         type="button"
       >
@@ -246,10 +198,10 @@ class MyProfile extends Component {
 
   render() {
     return (
-      <div className="myprofile-bgcontainer">
+      <>
         <Header />
         {this.renderMyProfileApiStatus()}
-      </div>
+      </>
     )
   }
 }

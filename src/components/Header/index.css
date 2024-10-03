@@ -23,24 +23,14 @@
   margin-right: 10px;
   width: 55px;
   height: 28px;
-  top: 24px;
-  left: 24px;
-  gap: 0px;
-  opacity: 0px;
   color: #3b82f6;
 }
 .header-instashare-heading {
   width: 92px;
   height: 24px;
-  top: 26px;
-  left: 91px;
-  gap: 0px;
-  opacity: 0px;
   font-family: Roboto;
   font-size: 18px;
   font-weight: 500;
-  line-height: 24px;
-  text-align: left;
   color: #262626;
 }
 
@@ -48,11 +38,7 @@
   cursor: pointer;
   width: 40px;
   height: 40px;
-  top: 26px;
-  left: 312px;
   padding: 6px 3px 6px 3px;
-  gap: 0px;
-  opacity: 0px;
 }
 
 .hamburger-menu-card {
@@ -75,31 +61,11 @@
   cursor: pointer;
   width: 38px;
   height: 18px;
-  top: 87px;
-  left: 26px;
-  gap: 0px;
-  opacity: 0px;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
-  text-align: left;
   color: #262626;
-}
-.header-menulist-active-heading {
-  cursor: pointer;
-  width: 38px;
-  height: 18px;
-  top: 87px;
-  left: 26px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 18px;
-  text-align: left;
-  color: #4094ef;
 }
 .header-logout-btn {
   cursor: pointer;
@@ -107,10 +73,6 @@
   border-radius: 6px;
   width: 86px;
   height: 32px;
-  top: 80px;
-  left: 197px;
-  gap: 0px;
-  opacity: 0px;
   background: #4094ef;
   font-family: Roboto;
   font-size: 12px;
@@ -122,16 +84,58 @@
   cursor: pointer;
   width: 30px;
   height: 30px;
-  top: 84px;
-  left: 312px;
   padding: 2px;
-  gap: 0px;
-  opacity: 0px;
   color: #262626;
 }
 .text-btn-none {
   border: none;
   background: none;
+}
+
+.header-mobile-search-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+  width: 280px;
+  height: 28px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  border: 1.5px solid #dbdbdb;
+}
+
+@media screen and (min-width: 768px) {
+  .header-mobile-search-card {
+    display: none;
+  }
+}
+.header-mobile-search-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  background-color: #fafafa;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16.41px;
+}
+
+.header-mobile-search-icon-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #dbdbdb;
+  border-radius: 0px 2px 2px 0px;
+  width: 34px;
+  height: 26px;
+}
+
+.header-mobile-search-icon {
+  width: 10px;
+  height: 10px;
+  color: #989898;
 }
 
 .desktop-hamburger-menu-card {
@@ -140,9 +144,9 @@
 @media screen and (min-width: 768px) {
   .desktop-hamburger-menu-card {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    width: 450px;
+    width: 100%;
   }
   .header-desktop-search-card {
     display: flex;
@@ -151,11 +155,8 @@
     border-radius: 4px;
     width: 214px;
     height: 28px;
-    top: 18px;
-    left: 781px;
-    gap: 0px;
-    opacity: 0px;
     border: 1.5px solid #dbdbdb;
+    margin-right: 15px;
   }
   .header-desktop-search-input {
     width: 100%;
@@ -168,7 +169,6 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 16.41px;
-    text-align: left;
   }
   .header-desktop-search-icon-btn {
     border: none;
@@ -177,73 +177,38 @@
     background-color: #dbdbdb;
     width: 20%;
     height: 100%;
-    top: 19px;
-    left: 960px;
-    gap: 0px;
     border-radius: 0px 2px 2px 0px;
-    opacity: 0px;
   }
   .header-desktop-search-icon {
     width: 10px;
     height: 10px;
-    top: 27px;
-    left: 972px;
-    gap: 0px;
-    opacity: 0px;
     color: #989898;
   }
   .header-menulist-desktop-heading {
     cursor: pointer;
     width: 38px;
     height: 18px;
-    top: 23px;
-    left: 1027px;
-    gap: 0px;
-    opacity: 0px;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
-    text-align: left;
     color: #262626;
+    margin-right: 15px;
   }
-  .header-menulist-desktop-active-heading {
-    color: #4094ef;
-    cursor: pointer;
-    width: 38px;
-    height: 18px;
-    top: 23px;
-    left: 1027px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18px;
-    text-align: left;
-  }
+
   .header-desktop-logout-btn {
     cursor: pointer;
     border: none;
     border-radius: 6px;
     width: 80px;
     height: 30px;
-    top: 80px;
-    left: 197px;
-    gap: 0px;
-    opacity: 0px;
     background: #4094ef;
     font-family: Roboto;
     font-size: 12px;
     font-weight: 500;
-    line-height: 16px;
     color: #ffffff;
   }
 }
 .classname-link {
   text-decoration: none;
 }
-/*
-  border: 2px solid gold;
-
-*/

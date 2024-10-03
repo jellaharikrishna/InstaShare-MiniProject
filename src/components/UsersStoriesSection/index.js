@@ -2,9 +2,6 @@ import {Component} from 'react'
 import {Link} from 'react-router-dom'
 import Slider from 'react-slick'
 
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 
@@ -118,10 +115,6 @@ class UsersStoriesSection extends Component {
     )
   }
 
-  onClickTryAgainBtn = () => {
-    this.getUsersStories()
-  }
-
   usersStoriesFailureView = () => (
     <div className="usersstories-failure-container">
       <img
@@ -133,7 +126,7 @@ class UsersStoriesSection extends Component {
         Something went wrong. Please try again
       </h1>
       <button
-        onClick={this.onClickTryAgainBtn}
+        onClick={() => this.getUsersStories()}
         className="usersstories-failure-btn"
         type="button"
       >
@@ -158,7 +151,12 @@ class UsersStoriesSection extends Component {
   }
 
   render() {
-    return <>{this.renderUsersStoriesSectionApiStatus()}</>
+    return (
+      <>
+        {this.renderUsersStoriesSectionApiStatus()}
+        <hr className="usersstories-hrline" />
+      </>
+    )
   }
 }
 

@@ -92,7 +92,7 @@ class UserProfile extends Component {
     } = userProfileData
     return (
       <>
-        <div className="userprofile-mobile-details-card">
+        <div className="userprofile-details-card">
           <h1 className="userprofile-username">{userName}</h1>
           <div className="userprofile-pic-followers-card">
             <img
@@ -100,20 +100,22 @@ class UserProfile extends Component {
               src={profilePic}
               alt="user profile"
             />
-            <div className="userprofile-count-card">
-              <p className="userprofile-count">{postsCount}</p>
-              <p className="userprofile-count-text">posts</p>
-            </div>
-            <div className="userprofile-count-card">
-              <p className="userprofile-count">{followersCount}</p>
-              <p className="userprofile-count-text">followers</p>
-            </div>
-            <div className="userprofile-count-card">
-              <p className="userprofile-count">{followingCount}</p>
-              <p className="userprofile-count-text">following</p>
-            </div>
+            <p className="userprofile-count">
+              {postsCount} <br />
+              <span className="userprofile-count-text">posts</span>
+            </p>
+
+            <p className="userprofile-count">
+              {followersCount} <br />
+              <span className="userprofile-count-text">followers</span>
+            </p>
+
+            <p className="userprofile-count">
+              {followingCount} <br />
+              <span className="userprofile-count-text">following</span>
+            </p>
           </div>
-          <h1 className="userprofile-userid">{userId}</h1>
+          <p className="userprofile-userid">{userId}</p>
           <p className="userprofile-userbio">{userBio}</p>
           <ul className="userprofile-storieslist-card">
             {storiesList.map(each => (
@@ -128,52 +130,6 @@ class UserProfile extends Component {
           </ul>
         </div>
 
-        <div className="userprofile-desktop-details-card">
-          <div className="userprofile-desktop-userbio-card">
-            <img
-              className="userprofile-desktop-profilepic"
-              src={profilePic}
-              alt="user profile"
-            />
-
-            <div className="userprofile-desktop-username-followers-card">
-              <h1 className="userprofile-desktop-username">{userName}</h1>
-              <div className="userprofile-desktop-count-followers-card">
-                <p className="userprofile-desktop-count">
-                  {postsCount}
-                  <span className="userprofile-desktop-count-text">posts</span>
-                </p>
-
-                <p className="userprofile-desktop-count">
-                  {followersCount}
-                  <span className="userprofile-desktop-count-text">
-                    followers
-                  </span>
-                </p>
-
-                <p className="userprofile-desktop-count">
-                  {followingCount}
-                  <span className="userprofile-desktop-count-text">
-                    following
-                  </span>
-                </p>
-              </div>
-              <h1 className="userprofile-desktop-userid">{userId}</h1>
-              <p className="userprofile-desktop-userbio">{userBio}</p>
-            </div>
-          </div>
-          <ul className="userprofile-desktop-storieslist-card">
-            {storiesList.map(each => (
-              <li className="userprofile-desktop-storieslist-li" key={each.id}>
-                <img
-                  className="userprofile-desktop-storieslist-image"
-                  src={each.image}
-                  alt="user story"
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
         <hr className="userprofile-hrline" />
         <div className="userprofile-postslist-container">
           <div className="userprofile-postslist-title-card">
@@ -209,10 +165,6 @@ class UserProfile extends Component {
     )
   }
 
-  onClickUserProfileTryAgain = () => {
-    this.getUserProfile()
-  }
-
   userProfileFailureView = () => (
     <div className="userprofile-failure-container">
       <img
@@ -220,11 +172,11 @@ class UserProfile extends Component {
         src="https://res.cloudinary.com/dmogabwqz/image/upload/v1727156189/Icon_xj1k3d.png"
         alt="failure view"
       />
-      <h1 className="userprofile-wentwrong-heading">
+      <p className="userprofile-wentwrong-heading">
         Something went wrong. Please try again
-      </h1>
+      </p>
       <button
-        onClick={this.onClickUserProfileTryAgain}
+        onClick={() => this.getUserProfile()}
         className="userprofile-tryagain-btn"
         type="button"
       >
@@ -250,10 +202,10 @@ class UserProfile extends Component {
 
   render() {
     return (
-      <div className="userprofile-bgcontainer">
+      <>
         <Header />
         {this.renderUserProfileApiStatus()}
-      </div>
+      </>
     )
   }
 }

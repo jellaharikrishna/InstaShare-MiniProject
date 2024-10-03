@@ -1,7 +1,7 @@
 .loginpage-bgcontainer {
   height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -10,14 +10,13 @@
 }
 
 @media screen and (min-width: 768px) {
+  .loginpage-bgcontainer {
+    justify-content: space-around;
+  }
   .website-login {
     display: block;
-    width: 582px;
+    width: 500px;
     height: 373px;
-    top: 326px;
-    left: 160px;
-    gap: 0px;
-    opacity: 0px;
   }
 }
 
@@ -26,12 +25,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 456px;
+  width: 450px;
   height: 458px;
-  top: 283px;
-  left: 824px;
-  gap: 0px;
-  opacity: 0px;
 }
 
 @media screen and (min-width: 768px) {
@@ -43,10 +38,6 @@
 .website-logo {
   width: 82px;
   height: 42px;
-  top: 60px;
-  left: 187px;
-  gap: 0px;
-  opacity: 0px;
 }
 
 .instashare-heading {
@@ -57,10 +48,6 @@
   text-align: center;
   width: 122px;
   height: 32px;
-  top: 114px;
-  left: 167px;
-  gap: 0px;
-  opacity: 0px;
   color: #262626;
 }
 
@@ -68,23 +55,15 @@
   margin-bottom: 20px;
   width: 360px;
   height: 64px;
-  top: 194px;
-  left: 48px;
-  gap: 0px;
-  opacity: 0px;
 }
 
 .label-text {
   width: 65px;
   height: 16px;
-  gap: 0px;
-  opacity: 0px;
   font-family: Roboto;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
-  letter-spacing: 0.01em;
-  text-align: left;
   color: #262626;
 }
 
@@ -95,10 +74,7 @@
   padding-left: 15px;
   width: 360px;
   height: 40px;
-  top: 24px;
-  gap: 0px;
   border-radius: 2px 0px 0px 0px;
-  opacity: 0px;
   background: #eeeeee;
 }
 
@@ -106,15 +82,10 @@
   margin-top: 1px;
   width: 360px;
   height: 16px;
-  top: 621px;
-  left: 872px;
-  gap: 0px;
-  opacity: 0px;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 16.41px;
-  text-align: left;
   color: #ef4444;
 }
 
@@ -124,10 +95,6 @@
   margin-top: 15px;
   width: 360px;
   height: 40px;
-  top: 669px;
-  left: 872px;
-  gap: 0px;
-  opacity: 0px;
   border-radius: 8px;
   font-family: Roboto;
   font-size: 14px;

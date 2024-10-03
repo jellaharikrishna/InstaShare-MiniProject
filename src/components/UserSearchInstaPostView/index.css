@@ -1,21 +1,21 @@
-.instapostview-li-container {
+.usersearchinstapostview-li-container {
   border-radius: 4px;
   margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .instapostview-li-container {
+  .usersearchinstapostview-li-container {
     border: 1px solid #dbdbdb;
     margin-bottom: 20px;
   }
 }
-.instapostview-header-card {
+.usersearchinstapostview-header-card {
   display: flex;
   align-items: center;
   margin-left: 15px;
   padding: 5px;
 }
-.instapostview-profile-icon-border {
+.usersearchinstapostview-profile-icon-border {
   margin-right: 15px;
   width: 35px;
   height: 35px;
@@ -23,55 +23,55 @@
   padding: 2px;
   border: 1px solid #c60188;
 }
-.instapostview-profile-icon {
+.usersearchinstapostview-profile-icon {
   border-radius: 15px;
   width: 30px;
   height: 30px;
 }
-.instapostview-username {
+.usersearchinstapostview-username {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   color: #262626;
 }
-.instapostview-classname-link {
+.usersearchinstapostview-classname-link {
   text-decoration: none;
 }
 
-.instapostview-image {
+.usersearchinstapostview-image {
   width: 100%;
   height: 375px;
 }
 
 @media screen and (min-width: 768px) {
-  .instapostview-image {
-    width: 100%;
+  .usersearchinstapostview-image {
+    max-width: 100%;
     height: 614px;
   }
 }
 
-.instapostview-footer-card {
+.usersearchinstapostview-footer-card {
   margin-left: 15px;
   padding: 5px;
 }
 
-.instapostview-btn-card {
+.usersearchinstapostview-btn-card {
   width: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.instapostview-icon-btn {
+.usersearchinstapostview-icon-btn {
   cursor: pointer;
   border: none;
   background: none;
 }
 
-.instapostview-icon {
+.usersearchinstapostview-icon {
   width: 24px;
   height: 24px;
 }
-.instapostview-likes {
+.usersearchinstapostview-likes {
   width: 58px;
   font-family: Roboto;
   font-size: 14px;
@@ -79,13 +79,13 @@
   color: #262626;
 }
 
-.instapostview-caption {
+.usersearchinstapostview-caption {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   color: #262626;
 }
-.instapostview-spancomment {
+.usersearchinstapostview-spancomment {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
@@ -93,14 +93,14 @@
   color: #262626;
 }
 
-.instapostview-comment {
+.usersearchinstapostview-comment {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   color: #262626;
 }
 
-.instapostview-createdat {
+.usersearchinstapostview-createdat {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;

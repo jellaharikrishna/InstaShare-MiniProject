@@ -43,7 +43,7 @@ const InstaPostView = props => {
           />
         </div>
         <Link className="instapostview-classname-link" to={`/users/${userId}`}>
-          <h1 className="instapostview-userame">{userName}</h1>
+          <p className="instapostview-username">{userName}</p>
         </Link>
       </div>
       <img className="instapostview-image" src={imageUrl} alt="post" />
